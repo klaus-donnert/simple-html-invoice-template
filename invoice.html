@@ -96,6 +96,16 @@
 			.invoice-box.rtl table tr td:nth-child(2) {
 				text-align: left;
 			}
+			.custom-color {
+				padding: 4px;
+				color: #fff;
+				background-color: #2188b6;
+			}
+			.bottom{
+				position: absolute;
+				bottom: 0;
+				width: 95%;
+			}
 		</style>
 	</head>
 
@@ -106,15 +116,21 @@
 					<td colspan="2">
 						<table>
 							<tr>
-								<td class="title">
-									<img src="https://www.sparksuite.com/images/logo.png" style="width: 100%; max-width: 300px" />
+								<td>
+									<p>
+									Sparksuite, Inc.<br />
+									12345 Sunny Road<br />
+									Sunnyville, CA 12345
+									<p>
+
 								</td>
 
-								<td>
-									Invoice #: 123<br />
-									Created: January 1, 2015<br />
-									Due: February 1, 2015
+
+								<td class="title">
+									<img src="logo.png" style="width: 100%; max-width: 300px" />
 								</td>
+
+
 							</tr>
 						</table>
 					</td>
@@ -124,17 +140,24 @@
 					<td colspan="2">
 						<table>
 							<tr>
-								<td>
-									Sparksuite, Inc.<br />
-									12345 Sunny Road<br />
-									Sunnyville, CA 12345
+								<td style="width: 60%">
+									<div>
+										<strong>BILL TO:</strong> <br />
+										Acme Corp.<br />
+										John Doe<br />
+										john@example.com <br />
+										<!-- line four --><br>
+
+										<div class="custom-color" style="line-height: .10;margin-top: .9rem">&nbsp;</div>
+									</div>
+								</td>
+								<td style="text-align: left;">
+									<p class="custom-color">INVOICE #: 123
+									<p class="custom-color">Created: January 1, 2015
+									<p class="custom-color">Due: February 1, 2015
 								</td>
 
-								<td>
-									Acme Corp.<br />
-									John Doe<br />
-									john@example.com
-								</td>
+
 							</tr>
 						</table>
 					</td>
