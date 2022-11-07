@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>A simple, clean, and responsive HTML invoice template</title>
+		<title>Invoice</title>
 
 		<style>
 			.invoice-box {
@@ -83,19 +83,6 @@
 				}
 			}
 
-			/** RTL **/
-			.invoice-box.rtl {
-				direction: rtl;
-				font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-			}
-
-			.invoice-box.rtl table {
-				text-align: right;
-			}
-
-			.invoice-box.rtl table tr td:nth-child(2) {
-				text-align: left;
-			}
 			.custom-color {
 				padding: 4px;
 				color: #fff;
@@ -106,32 +93,39 @@
 				bottom: 0;
 				width: 95%;
 			}
+			.mb-20 {
+				margin-bottom: 20px;
+			}
+			.lh-125 {
+				line-height: 1.25;
+			}
 		</style>
 	</head>
 
 	<body>
 		<div class="invoice-box">
 			<table cellpadding="0" cellspacing="0">
+				<tbody>
 				<tr class="top">
 					<td colspan="2">
 						<table>
+							<tbody>
 							<tr>
 								<td>
 									<p>
 									Sparksuite, Inc.<br />
 									12345 Sunny Road<br />
 									Sunnyville, CA 12345
-									<p>
+									</p>
 
 								</td>
-
 
 								<td class="title">
-									<img src="logo.png" style="width: 100%; max-width: 300px" />
+									<img src="logo.png" alt="logo" style="width: 100%; max-width: 300px" />
 								</td>
 
-
 							</tr>
+							</tbody>
 						</table>
 					</td>
 				</tr>
@@ -152,58 +146,67 @@
 									</div>
 								</td>
 								<td style="text-align: left;">
-									<p class="custom-color">INVOICE #: 123
-									<p class="custom-color">Created: January 1, 2015
-									<p class="custom-color">Due: February 1, 2015
+									<p class="custom-color"><strong>INVOICE #: 123456</strong></p>
+									<p class="custom-color"><strong>DATE</strong>
+										11/07/2022 &nbsp;&nbsp;<strong>TERMS</strong> Net 30</p>
+									<p class="custom-color"><strong>DUE DATE</strong> 12/07/2022
 								</td>
-
 
 							</tr>
 						</table>
 					</td>
 				</tr>
 
-				<tr class="heading">
-					<td>Payment Method</td>
-
-					<td>Check #</td>
+				</tbody>
+			</table>
+			<table cellspacing="0" class="mb-20">
+				<thead>
+				<tr class="custom-color">
+					<th style="padding-left: 3px">DATE</th>
+					<th>ACTIVITY</th>
+					<th width="50%">DESCRIPTION</th>
+					<th>RATE</th>
+					<th>AMOUNT</th>
 				</tr>
-
-				<tr class="details">
-					<td>Check</td>
-
-					<td>1000</td>
-				</tr>
-
-				<tr class="heading">
-					<td>Item</td>
-
-					<td>Price</td>
-				</tr>
-
-				<tr class="item">
-					<td>Website design</td>
-
-					<td>$300.00</td>
-				</tr>
-
-				<tr class="item">
-					<td>Hosting (3 months)</td>
-
+				</thead>
+				<tbody>
+				<tr class="lh-125">
+					<td style="padding-left: 3px">11/07/2022</td>
+					<td>Design</td>
+					<td>Designing a new theme</td>
+					<td>$75.00</td>
 					<td>$75.00</td>
 				</tr>
-
-				<tr class="item last">
-					<td>Domain name (1 year)</td>
-
-					<td>$10.00</td>
+				<tr class="lh-125">
+					<td style="padding-left: 3px">11/07/2022</td>
+					<td>Design</td>
+					<td>Designing a new theme</td>
+					<td>$75.00</td>
+					<td>$75.00</td>
 				</tr>
+				<tr class="lh-125">
+					<td style="padding-left: 3px">11/07/2022</td>
+					<td>Design</td>
+					<td>Designing a new theme</td>
+					<td>$75.00</td>
+					<td>$75.00</td>
+				</tr>
+				</tbody>
 
-				<tr class="total">
+			</table>
+			<table CELLSPACING="0">
+				<tbody>
+				<tr>
+					<td style="padding-right: 20px;">To avoid a 7% Late payment charge Please pay by the DUE date</td>
 					<td></td>
-
-					<td>Total: $385.00</td>
 				</tr>
+				<tr>
+					<td style="width: 50%">&nbsp;</td>
+					<td class="custom-color" style="width: 25%; text-align: left; font-weight: bold">TOTAL DUE</td>
+					<td class="custom-color" style="text-align: center">$225.00</td>
+
+				</tr>
+				</tbody>
 			</table>
 		</div>
 	</body>
